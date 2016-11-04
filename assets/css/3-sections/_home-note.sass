@@ -1,4 +1,4 @@
-section.work
+section.note
   background:
     image: url(../img/HDnautilus.png)
     repeat: no-repeat
@@ -7,23 +7,42 @@ section.work
     attachment: fixed
     position: center bottom
     size: cover
+    //color: black
   //Text-color
   color: white
 
   .home-cta
       color: rgb(112,128,144)
 
-  .picture-strip
+  .picture-strip, .picture-strip2, .picture-strip3
     //background: pink
     position: static
     top: 0
     margin: -50px 0
     width: 300px
-    height: (100% + 30)
+    height: (50% + 7.4)
     //Could add a JavaScript gif of representing
     //Computer animation
     background:
-      image: url()
+      image: url(../img/nautilus.jpg)
+      position: center 0px
+      //if JavaScript is working, put repeat-y
+      repeat: no-repeat
+      size: 50%
+      align: center
+
+
+  .picture-strip2
+    background:
+      image: url(../img/lorenz-attractor2.jpg)
+
+
+  .picture-strip3
+    background:
+      image: url(../img/prism.jpg)
+      //size: 50%
+
+
 
   .col-1
     position: center

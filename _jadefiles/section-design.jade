@@ -1,0 +1,18 @@
+section.design
+  .flex.flex--center
+
+      .col-50
+        .article-wrap
+        {% for post in site.posts limit: 6 %}
+          a(href="" style="background-image: url(assets/img/posts/thumbnails/{{post.thumbnail}})").article-thumb
+            .article-meta
+              .name {{post.title}}
+              .date {{post.date}}
+            {% endfor %}
+
+
+      .col-50.flex.flex--center.order-first
+        .col-1
+          .desc-wrap
+            p.home-lead.outdented ... writing and designing ...
+            a(href="").home-cta See my design

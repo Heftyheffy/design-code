@@ -640,24 +640,87 @@ section.about {
     margin-right: auto;
     max-width: 300px; } }
 
-section.work {
+section.note {
   background-image: url(../img/HDnautilus.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center bottom;
   background-size: cover;
   color: white; }
-  section.work .home-cta {
+  section.note .home-cta {
     color: slategray; }
-  section.work .picture-strip {
+  section.note .picture-strip, section.note .picture-strip2, section.note .picture-strip3 {
     position: static;
     top: 0;
     margin: -50px 0;
     width: 300px;
-    height: 130%;
-    background-image: url(); }
-  section.work .col-1 {
+    height: 57.4%;
+    background-image: url(../img/nautilus.jpg);
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-align: center; }
+  section.note .picture-strip2 {
+    background-image: url(../img/lorenz-attractor2.jpg); }
+  section.note .picture-strip3 {
+    background-image: url(../img/prism.jpg); }
+  section.note .col-1 {
     position: center; }
+
+section.design {
+  background-color: #003973;
+  background: linear-gradient(to left, #003973, #E5E5BE); }
+  section.design .col-1 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+  section.design .home-cta {
+    color: white;
+    background: #64b3f4; }
+  section.design .article-wrap {
+    margin: -50px 0; }
+    section.design .article-wrap::after {
+      clear: both;
+      content: "";
+      display: table; }
+  section.design .article-thumb {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+    float: left;
+    position: relative;
+    overflow: hidden; }
+    section.design .article-thumb::after {
+      content: '';
+      display: block;
+      padding-top: 100%; }
+  section.design .article-meta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 179, 244, 0.6);
+    color: white;
+    padding: 10px;
+    -webkit-transform: translate(0%, 100%) scale(0.5);
+            transform: translate(0%, 100%) scale(0.5);
+    transition: all 200ms ease-in-out;
+    opacity: 0; }
+    section.design .article-meta .name {
+      font-size: 18px; }
+    section.design .article-meta .date {
+      font-style: italic; }
+  section.design .article-thumb:hover .article-meta {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0%) scale(1);
+            transform: translate(0%, 0%) scale(1); }
+
+@media (max-width: 640px) {
+  .desc-wrap {
+    margin-top: 100px; } }
 
 .home-wrap {
   display: -ms-flexbox;
