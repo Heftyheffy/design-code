@@ -1,15 +1,10 @@
-//$(function(){});
-
-//based on windows scrolling
-
-$(window).scroll(function(){
-  pictureScroll();
+$(function() {
+  //designRubberBand();
+  setInterval(function(){designRubberBand()}, 4000);
 });
 
-function pictureScroll(){
-  var wScroll = $(window).scrollTop();
-
-  console.log(wScroll);
-
-  //$('.picture-strip').css('background-position', 'center -' + wScroll + 'px');
+function designRubberBand(){
+  var randomNumber = Math.floor(Math.random() * $('.article-thumb').length) + 1
+  $('.article-thumb').eq(randomNumber).addClass('is-emph')
+    .siblings().removeClass('is-emph');
 }

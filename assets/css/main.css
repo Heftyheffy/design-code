@@ -654,12 +654,15 @@ section.note {
     top: 0;
     margin: -50px 0;
     width: 300px;
-    height: 57.4%;
+    height: 80%;
     background-image: url(../img/nautilus.jpg);
     background-position: center 0px;
     background-repeat: no-repeat;
     background-size: 50%;
     background-align: center; }
+    section.note .picture-strip img, section.note .picture-strip2 img, section.note .picture-strip3 img {
+      max-width: 100%;
+      display: block; }
   section.note .picture-strip2 {
     background-image: url(../img/lorenz-attractor2.jpg); }
   section.note .picture-strip3 {
@@ -692,6 +695,13 @@ section.design {
     float: left;
     position: relative;
     overflow: hidden; }
+    section.design .article-thumb.is-emph {
+      -webkit-animation-name: rubberBand;
+              animation-name: rubberBand;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both; }
     section.design .article-thumb::after {
       content: '';
       display: block;
@@ -710,7 +720,8 @@ section.design {
     transition: all 200ms ease-in-out;
     opacity: 0; }
     section.design .article-meta .name {
-      font-size: 18px; }
+      font-size: 18px;
+      line-height: 1.2; }
     section.design .article-meta .date {
       font-style: italic; }
   section.design .article-thumb:hover .article-meta {
@@ -720,7 +731,63 @@ section.design {
 
 @media (max-width: 640px) {
   .desc-wrap {
-    margin-top: 100px; } }
+    margin-top: 100px; }
+  .article-thumb {
+    left: 5%; } }
+
+@media (max-width: 320px) {
+  .article-thumb {
+    left: 15px; } }
+
+@media (max-width: 1010px) {
+  .article-thumb {
+    margin-bottom: 8%; } }
+
+@-webkit-keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1); }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1); } }
+
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1); }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1); } }
 
 .home-wrap {
   display: -ms-flexbox;

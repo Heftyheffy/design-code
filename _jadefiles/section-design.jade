@@ -3,12 +3,12 @@ section.design
 
       .col-50
         .article-wrap
-        {% for post in site.posts limit: 6 %}
-          a(href="" style="background-image: url(assets/img/posts/thumbnails/{{post.thumbnail}})").article-thumb
+          {% for post in site.posts limit: 6 %}
+          a(href="{{post.url}}" style="background-image: url(assets/img/posts/thumbnails/{{post.thumbnail}})").article-thumb
             .article-meta
               .name {{post.title}}
-              .date {{post.date}}
-            {% endfor %}
+              .date {{post.date | date: "%a, %b %d, %Y"}}
+          {% endfor %}
 
 
       .col-50.flex.flex--center.order-first

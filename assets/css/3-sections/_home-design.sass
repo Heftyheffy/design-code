@@ -27,6 +27,12 @@ section.design
     position: relative
     overflow: hidden
 
+    &.is-emph
+      //adding Pulse animation
+      animation-name: rubberBand
+      animation-duration: 1s
+      animation-fill-mode: both
+
     &::after
       content: ''
       display: block
@@ -48,6 +54,7 @@ section.design
 
     .name
       font-size: 18px
+      line-height: 1.2
 
     .date
       font-style: italic
@@ -62,3 +69,37 @@ section.design
 @media (max-width: 640px)
   .desc-wrap
     margin-top: 100px
+
+  .article-thumb
+    left: 5%
+
+@media (max-width: 320px)
+  .article-thumb
+    left: 15px
+
+@media (max-width: 1010px)
+  .article-thumb
+    margin-bottom: 8%
+
+
+@keyframes rubberBand
+  from
+    transform: scale3d(1, 1, 1)
+
+  30%
+    transform: scale3d(1.25, 0.75, 1)
+
+  40%
+    transform: scale3d(0.75, 1.25, 1)
+
+  50%
+    transform: scale3d(1.15, 0.85, 1)
+
+  65%
+    transform: scale3d(.95, 1.05, 1)
+
+  75%
+    transform: scale3d(1.05, .95, 1)
+
+  to
+    transform: scale3d(1, 1, 1)
