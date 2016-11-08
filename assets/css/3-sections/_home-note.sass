@@ -14,40 +14,34 @@ section.note
   .home-cta
       color: rgb(112,128,144)
 
-  .picture-strip, .picture-strip2, .picture-strip3
-    //background: pink
-    position: static
-    top: 0
-    margin: -50px 0
-    width: 300px
-    height: (80%)
-    //Could add a JavaScript gif of representing
-    //Computer animation
-    background:
-      image: url(../img/nautilus.jpg)
-      position: center 0px
-      //if JavaScript is working, put repeat-y
-      repeat: no-repeat
-      size: 50%
-      align: center
 
+  .home-lead
+    text-align: center
+    font-size: 45px
+
+  .notes-img-pic
+    display: block
 
     img
-      max-width: 100%
       display: block
+      float: right
+      width: 90%
 
-  .picture-strip2
-    background:
-      image: url(../img/lorenz-attractor2.jpg)
+      border: 3px solid grey
+      box-shadow: 0px 3px 10px rgba(0,0,0,0.2)
 
+      margin: 5px
 
-  .picture-strip3
-    background:
-      image: url(../img/prism.jpg)
-      //size: 50%
-
-
+  .cf
+    clear: both
+    margin-bottom: 20px
 
 
   .col-1
     position: center
+
+@media (max-width: 414px)
+  .notes-img-pic
+    width: 50%
+    position: static
+    float: right

@@ -649,26 +649,29 @@ section.note {
   color: white; }
   section.note .home-cta {
     color: slategray; }
-  section.note .picture-strip, section.note .picture-strip2, section.note .picture-strip3 {
-    position: static;
-    top: 0;
-    margin: -50px 0;
-    width: 300px;
-    height: 80%;
-    background-image: url(../img/nautilus.jpg);
-    background-position: center 0px;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-align: center; }
-    section.note .picture-strip img, section.note .picture-strip2 img, section.note .picture-strip3 img {
-      max-width: 100%;
-      display: block; }
-  section.note .picture-strip2 {
-    background-image: url(../img/lorenz-attractor2.jpg); }
-  section.note .picture-strip3 {
-    background-image: url(../img/prism.jpg); }
+  section.note .home-lead {
+    text-align: center;
+    font-size: 45px; }
+  section.note .notes-img-pic {
+    display: block; }
+    section.note .notes-img-pic img {
+      display: block;
+      float: right;
+      width: 90%;
+      border: 3px solid grey;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+      margin: 5px; }
+  section.note .cf {
+    clear: both;
+    margin-bottom: 20px; }
   section.note .col-1 {
     position: center; }
+
+@media (max-width: 414px) {
+  .notes-img-pic {
+    width: 50%;
+    position: static;
+    float: right; } }
 
 section.design {
   background-color: #003973;
@@ -678,6 +681,9 @@ section.design {
     display: flex;
     -ms-flex-align: center;
         align-items: center; }
+  section.design .home-lead {
+    margin-top: -35px;
+    text-align: left; }
   section.design .home-cta {
     color: white;
     background: #64b3f4; }
