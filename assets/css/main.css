@@ -650,11 +650,13 @@ section.note {
   section.note .home-cta {
     color: slategray; }
   section.note .home-lead {
+    margin-top: 40%;
+    margin-bottom: 10%;
     text-align: center;
     font-size: 45px; }
-  section.note .notes-img-pic {
+  section.note .picture-strip {
     display: block; }
-    section.note .notes-img-pic img {
+    section.note .picture-strip img {
       display: block;
       float: right;
       width: 90%;
