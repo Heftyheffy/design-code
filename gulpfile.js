@@ -15,7 +15,7 @@ var messages = {
 
 gulp.task("deploy", ["jekyll-build"], function (){
   return gulp.src("./_site/**/*")
-    .pip(deploy());
+    .pipe(deploy())
 });
 
 
@@ -23,8 +23,8 @@ gulp.task("deploy", ["jekyll-build"], function (){
 * Deploy
 **/
 gulp.task('deploy', function() {
-  return gulp.src('./dist/**/*')
-    .pipe(ghPages());
+  return gulp.src("./dist/**/*")
+    .pipe(deploy())
 });
 
 
