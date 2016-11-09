@@ -654,15 +654,16 @@ section.note {
     margin-bottom: 10%;
     text-align: center;
     font-size: 45px; }
-  section.note .picture-strip {
-    display: block; }
-    section.note .picture-strip img {
-      display: block;
-      float: right;
-      width: 90%;
-      border: 3px solid grey;
-      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-      margin: 5px; }
+  section.note .picture-strip img {
+    display: block;
+    float: right;
+    width: 90%;
+    border: 3px solid grey;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    margin: 5px; }
+    section.note .picture-strip img:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
   section.note .cf {
     clear: both;
     margin-bottom: 20px; }
