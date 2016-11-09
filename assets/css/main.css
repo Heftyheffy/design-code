@@ -811,6 +811,10 @@ section.design {
   .home-footer a:hover {
     background: #03a6ff; }
 
+@media (max-width: 775px) {
+  .home-footer a {
+    font-size: 30px; } }
+
 .home-wrap {
   display: -ms-flexbox;
   display: flex;
