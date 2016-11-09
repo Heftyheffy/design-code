@@ -2,3 +2,7 @@ name: Jeffrey Kim
 markdown: redcarpet
 highlighter: rouge # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+
+baseurl: /design-code
+
+url: "http://heftyheffy.github.io/design-code"
