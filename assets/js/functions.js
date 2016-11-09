@@ -1,10 +1,22 @@
 $(document).ready(function() {
-
+  smoothScroll(1000);
   setInterval(function(){designRubberBand()}, 4000);
-
   hoverNoteimgpic();
 
 });
+
+function smoothScroll(duration) {
+  $('a[href^="#"]').on('click', function(event) {
+    var target = $( $(this).attr('href'));
+
+    if(target.length){
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, duration);
+    }
+  });
+}
 
 function hoverNoteimgpic() {
   $('.notes-img-pic').hover(function(){
