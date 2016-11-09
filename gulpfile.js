@@ -6,12 +6,21 @@ var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var jade        = require('gulp-jade');
 
+var deploy      = require("gulp-gh-pages");
+
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
+
+gulp.task("deploy", ["jekyll-build"], function (){
+  return gulp.src("./_site/**/*")
+    .pip(deploy());
+});
+
+
 /**
-* Deploy 
+* Deploy
 **/
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
