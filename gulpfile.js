@@ -67,6 +67,7 @@ gulp.task('jade', function(){
    .pipe(gulp.dest('_includes'));
 });
 
+
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
@@ -74,7 +75,7 @@ gulp.task('jade', function(){
 gulp.task('watch', function () {
     gulp.watch('assets/css/**', ['sass']);
     gulp.watch(['*.html', '_layouts/*.html', '_includes/*'], ['jekyll-rebuild']);
-    gulp.watch('_jadefiles/*.jade', ['jade']);
+    gulp.watch(['_jadefiles/*.jade'], ['jade']);
 });
 
 /**
