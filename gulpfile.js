@@ -5,6 +5,7 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var jade        = require('gulp-jade');
+var deploy      = require('gulp-gh-pages');
 
 var deploy      = require("gulp-gh-pages");
 
@@ -13,6 +14,7 @@ var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
+<<<<<<< HEAD
 gulp.task("deploy", ["jekyll-build"], function (){
   return gulp.src("./_site/**/*")
     .pipe(deploy())
@@ -28,6 +30,12 @@ gulp.task('deploy', function() {
 });
 
 
+=======
+gulp.task('deploy', function () {
+  return gulp.src("./dist/**/*.*")
+    .pipe(deploy())
+})
+>>>>>>> c1da8b8626f340c550129acc83f2300ea6f24102
 
 /**
  * Build the Jekyll Site
@@ -80,6 +88,7 @@ gulp.task('jade', function(){
    .pipe(gulp.dest('_includes'));
 });
 
+
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
@@ -87,7 +96,7 @@ gulp.task('jade', function(){
 gulp.task('watch', function () {
     gulp.watch('assets/css/**', ['sass']);
     gulp.watch(['*.html', '_layouts/*.html', '_includes/*'], ['jekyll-rebuild']);
-    gulp.watch('_jadefiles/*.jade', ['jade']);
+    gulp.watch(['_jadefiles/*.jade'], ['jade']);
 });
 
 /**
