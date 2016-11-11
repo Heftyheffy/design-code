@@ -14,7 +14,7 @@ var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
-<<<<<<< HEAD
+
 gulp.task("deploy", ["jekyll-build"], function (){
   return gulp.src("./_site/**/*")
     .pipe(deploy())
@@ -30,12 +30,12 @@ gulp.task('deploy', function() {
 });
 
 
-=======
+
 gulp.task('deploy', function () {
   return gulp.src("./dist/**/*.*")
     .pipe(deploy())
 })
->>>>>>> c1da8b8626f340c550129acc83f2300ea6f24102
+
 
 /**
  * Build the Jekyll Site

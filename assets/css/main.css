@@ -519,7 +519,7 @@ body {
     text-indent: 101%;
     white-space: nowrap;
     max-width: 135px;
-    background-image: url(/assets/img/logo-hk.png);
+    background-image: url(https://heftyheffy.github.io/design-code/assets/img/logo-hk.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -812,15 +812,9 @@ section.design {
   .home-footer a:hover {
     background: #03a6ff; }
 
-<<<<<<< HEAD
-@media (max-width: 775px) {
-  .home-footer a {
-    font-size: 30px; } }
-=======
 @media (max-width: 842px) {
   .home-footer a {
     font-size: 1.4rem; } }
->>>>>>> c1da8b8626f340c550129acc83f2300ea6f24102
 
 .home-wrap {
   display: -ms-flexbox;
@@ -882,3 +876,6 @@ section.design {
     @media (max-width: 640px) {
       .home-lead.outdented {
         text-indent: 0; } }
+
+section.page-note {
+  background-color: yellow; }
