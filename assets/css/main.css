@@ -876,3 +876,16 @@ section.design {
     @media (max-width: 640px) {
       .home-lead.outdented {
         text-indent: 0; } }
+
+body {
+  background-color: #f9f9ef; }
+
+.page-wrap {
+  text-align: center; }
+  .page-wrap .page-notes {
+    display: inline-block; }
+  .page-wrap .bar1 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0; }
