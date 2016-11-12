@@ -881,11 +881,22 @@ body {
   background-color: #f9f9ef; }
 
 .page-wrap {
-  text-align: center; }
+  text-align: center;
+  height: 100vh;
+  border: solid; }
   .page-wrap .page-notes {
-    display: inline-block; }
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    height: 100vh;
+    padding: 0 10px;
+    border: solid;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
   .page-wrap .bar1 {
-    width: 35px;
-    height: 5px;
+    height: 3px;
     background-color: black;
-    margin: 6px 0; }
+    margin: 6px 0;
+    width: auto; }
