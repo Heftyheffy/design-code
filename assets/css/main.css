@@ -880,10 +880,6 @@ section.design {
       .home-lead.outdented {
         text-indent: 0; } }
 
-<<<<<<< HEAD
-section.page-note {
-  background-color: yellow; }
-=======
 .body-color {
   background-color: #f9f9ef; }
 
@@ -953,4 +949,3 @@ section.modern .modern-page {
     height: 250px;
     width: 450px;
     margin: 100px; }
->>>>>>> master
