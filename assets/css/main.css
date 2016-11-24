@@ -908,13 +908,44 @@ section.design {
     line-height: 3px; }
 
 section.modern .Wakui-example {
+  background-image: url(../img/Wakui-Water.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 648px;
+  height: 100vh;
   padding: 20px; }
 
-section.modern .nav-overlay {
-  display: grid; }
-  section.modern .nav-overlay ul {
-    list-style: none; }
+section.modern .nav-overlay .nav-ul-overlay {
+  list-style: none;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  float: right; }
+  section.modern .nav-overlay .nav-ul-overlay li {
+    margin: 0 0 0 15px; }
+
+section.modern .h1-modern-text {
+  color: #8EF6EF;
+  text-align: center;
+  font-size: 100px;
+  font-weight: lighter;
+  margin-top: 250px;
+  margin-right: 50px; }
+
+section.modern .modern-page {
+  height: 100vh; }
+  section.modern .modern-page .modern-picture1 {
+    background-image: url(../img/Wakui-landscape.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 450px;
+    margin: 100px; }
+  section.modern .modern-page .modern-picture2 {
+    background-image: url(../img/Wakui-Tree.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 450px;
+    margin: 100px; }
